@@ -1,0 +1,203 @@
+.landing-grid {
+  position: relative;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.banner-text {
+  background-color: black;
+  opacity: .8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.banner-text h1 {
+  font-size: 4.125rem;
+  font-weight: bold;
+  font-family: "Roboto Slab", "Helvetica", "Arial", sans-serif;
+  color: white;
+}
+
+.banner-text h2 {
+  font-size: 2.5rem;
+  padding-top: 1.25rem;
+  font-weight: normal;
+  font-family: "Raleway", "Helvetica", "Arial", sans-serif;
+  color: white;
+}
+
+.banner-text hr {
+  width: 50%;
+  margin: auto;
+}
+
+.banner-text p {
+  font-family: "Raleway", "Helvetica", "Arial", sans-serif;
+  color: white;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+.social-links {
+  display: flex;
+  font-size: 3.3rem;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links i {
+  color: white;
+  padding: .5rem;
+  opacity: .7;
+}
+
+.social-links i:hover {
+  color: #2C5364;
+  opacity: 1;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+/*<!==========DOWNLOAD BUTTON==========>*/
+
+.button {
+  width: 200px;
+  margin: 80px auto;
+  padding-bottom: 30px;
+}
+
+.button a {
+  background: black;
+  display: block;
+  height: 50px;
+  width: 200px;
+  border: 3px solid #00416A;
+  /*TYPE*/
+  color: white;
+  font: 1.1rem/3.1rem 'Roboto Slab', Helvetica, Verdana, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button a, p {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  -moz-box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+.button p {
+  background: black;
+  display: block;
+  height: 35px;
+  width: 180px;
+  margin: -50px 0 0 10px;
+  /*TYPE*/
+  text-align: center;
+  font: 0.75rem/2.8rem Helvetica, Verdana, sans-serif;
+  color: #fff;
+  /*POSITION*/
+  position: absolute;
+  z-index: -1;
+  /*TRANSITION*/
+  -webkit-transition: margin 0.5s ease;
+  -moz-transition: margin 0.5s ease;
+  -o-transition: margin 0.5s ease;
+  -ms-transition: margin 0.5s ease;
+  transition: margin 0.5s ease;
+}
+
+.button a:hover {
+  background: #00416A;
+  border: 3px solid black;
+  color: #0083d6;
+}
+
+.button:hover .bottom {
+  margin: -10px 0 0 10px;
+ }
+
+.button:hover .top {
+  margin: -80px 0 0 10px;
+  line-height: 30px;
+}
+
+
+/*==========AVATAR==========*/
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.avatar {
+	width: 150px;
+	height: 150px;
+	box-sizing: border-box;
+	border: 5px #020202 solid;
+	border-radius: 50%;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
+/*==========MEDIA QUERIES==========*/
+
+@media (max-width: 1300px) {
+  .social-links {
+    width: 80%;
+  }
+}
+
+@media (max-width: 665px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 520px) {
+  html {
+    font-size: 11px;
+  }
+
+  .social-links {
+    width: 100%;
+  }
+
+  .button a {
+    height: 40px;
+    width: 200px;
+  }
+
+  .button p {
+    margin: -40px 0 0 10px;
+  }
+
+  .button:hover .bottom {
+    margin: -10px 0 0 10px;
+   }
+
+  .button:hover .top {
+    margin: -70px 0 0 10px;
+  }
+}

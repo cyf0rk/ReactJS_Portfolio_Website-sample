@@ -1,0 +1,85 @@
+.toolbar {
+  font-family: 'Roboto Slab', sans-serif;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  height: 80px;
+}
+
+.toolbar__navigation {
+  display: flex;
+  align-items: center;
+  background: #000;
+  padding: 0;
+  margin: 0;
+}
+
+.toolbar__toggle-button {
+  margin-left: 20px;
+}
+
+.toolbar__logo {
+  margin-left: 1rem;
+}
+
+.toolbar__logo h1 {
+  font-size: 2rem;
+  opacity: .9;
+  color: white;
+  margin-left: 20px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+/*==========NAVIGATION BUTTONS==========*/
+
+.toolbar_navigation-items ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.toolbar_navigation-items li {
+  padding: 0 1rem;
+  letter-spacing: 0.3rem;
+}
+
+.toolbar_navigation-items a {
+  transition: 0.3s ease;
+  background: black;
+  color: #ffffff;
+  opacity: .8;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-top: 4px solid #004572;
+  border-bottom: 4px solid #004572;
+  padding: 15px 0;
+  margin: 0 20px;
+}
+
+.toolbar_navigation-items a:hover {
+  border-top: 4px solid #0083d6;
+  border-bottom: 4px solid #0083d6;
+  border-radius: 15% 15% 10% 10%;
+  color: #00416A;
+  padding: 6px 0;
+  opacity: 1;
+}
+
+@media (max-width: 769px) {
+  .toolbar_navigation-items {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .toolbar__toggle-button {
+    display: none;
+  }
+}
